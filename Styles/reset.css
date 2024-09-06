@@ -1,0 +1,12 @@
+/* reset.css */
+
+* {
+    margin: 0; /* Remove todas as margens padrão dos elementos */
+    padding: 0; /* Remove todos os espaçamentos internos padrão dos elementos */
+    box-sizing: border-box; /* Define o modelo de box para incluir padding e border na largura e altura */
+}
+
+body, html {
+    height: 100%; /* Define a altura como 100% do viewport */
+    font-family: 'Arial', sans-serif; /* Define a fonte padrão como Arial, com fallback para sans-serif */
+}

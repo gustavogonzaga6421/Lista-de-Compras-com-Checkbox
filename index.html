@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras - Gustavo Gonzaga</title>
+    <!-- Links para os arquivos de estilo CSS -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Contêiner principal para o conteúdo da página -->
+    <div class="container">
+        <!-- Seção do Banner com a logo -->
+        <div class="banner">
+            <img src="imagens/Logo principal.svg" alt="cesta de compras" class="banner-img">
+        </div>
+
+        <!-- Área de input para adicionar novos itens -->
+        <div class="input-area">
+            <!-- Campo de texto para digitar o nome do item -->
+            <input type="text" id="item-input" placeholder="Digite o item que deseja adicionar">
+            <!-- Botão para salvar o item adicionado -->
+            <button class="save-button">Salvar item</button>
+        </div>
+
+        <!-- Lista de itens ainda não comprados -->
+        <h2 class="section-title">Lista de Compras do Gustavo</h2>
+        <ul class="item-list" id="shopping-list">
+            <li>
+                <input type="checkbox" id="item-banana-prata" class="input_checkbox">
+                <div class="checkbox_customizado"></div>
+                <label for="item-banana-prata">Banana Prata</label>
+                <span class="icons">
+                    <i class="edit-icon"><img src="imagens/Edição.svg" alt="Caneta para edição"></i>
+                    <i class="delete-icon"><img src="imagens/Excluir.svg" alt="Lixeira para excluir"></i>
+                </span>
+            </li>
+            <li>
+                <input type="checkbox" id="item-leite-integral" class="input_checkbox">
+                <div class="checkbox_customizado"></div>
+                <label for="item-leite-integral">Leite integral</label>
+                <span class="icons">
+                    <i class="edit-icon"><img src="imagens/Edição.svg" alt="Caneta para edição"></i>
+                    <i class="delete-icon"><img src="imagens/Excluir.svg" alt="Lixeira para excluir"></i>
+                </span>
+            </li>
+            <li>
+                <input type="checkbox" id="item-mamao-papaia" class="input_checkbox">
+                <div class="checkbox_customizado"></div>
+                <label for="item-mamao-papaia">Mamão Papaia</label>
+                <span class="icons">
+                    <i class="edit-icon"><img src="imagens/Edição.svg" alt="Caneta para edição"></i>
+                    <i class="delete-icon"><img src="imagens/Excluir.svg" alt="Lixeira para excluir"></i>
+                </span>
+            </li>
+            <li>
+                <input type="checkbox" id="item-pao-frances" class="input_checkbox">
+                <div class="checkbox_customizado"></div>
+                <label for="item-pao-frances">Pão Francês</label>
+                <span class="icons">
+                    <i class="edit-icon"><img src="imagens/Edição.svg" alt="Caneta para edição"></i>
+                    <i class="delete-icon"><img src="imagens/Excluir.svg" alt="Lixeira para excluir"></i>
+                </span>
+            </li>
+            <!-- Novos itens adicionados -->
+            <li>
+                <input type="checkbox" id="item-nutela" class="input_checkbox">
+                <div class="checkbox_customizado"></div>
+                <label for="item-nutela">Nutela</label>
+                <span class="icons">
+                    <i class="edit-icon"><img src="imagens/Edição.svg" alt="Caneta para edição"></i>
+                    <i class="delete-icon"><img src="imagens/Excluir.svg" alt="Lixeira para excluir"></i>
+                </span>
+            </li>
+            <li>
+                <input type="checkbox" id="item-nescau-cereal" class="input_checkbox">
+                <div class="checkbox_customizado"></div>
+                <label for="item-nescau-cereal">Nescau Cereal</label>
+                <span class="icons">
+                    <i class="edit-icon"><img src="imagens/Edição.svg" alt="Caneta para edição"></i>
+                    <i class="delete-icon"><img src="imagens/Excluir.svg" alt="Lixeira para excluir"></i>
+                </span>
+            </li>
+        </ul>
+
+        <!-- Lista de itens comprados -->
+        <h2 class="section-title purchased-title">Comprado</h2>
+        <ul class="item-list" id="purchased-list">
+            <li class="completed">
+                <input type="checkbox" id="item-esponja-de-louca" class="input_checkbox" checked>
+                <div class="checkbox_customizado"></div>
+                <label for="item-esponja-de-louca">Esponja de louça</label>
+                <span class="icons">
+                    <i class="edit-icon"><img src="imagens/Edição.svg" alt="Caneta para edição"></i>
+                    <i class="delete-icon"><img src="imagens/Excluir.svg" alt="Lixeira para excluir"></i>
+                </span>
+            </li>
+            <li class="completed">
+                <input type="checkbox" id="item-cacau-em-po" class="input_checkbox" checked>
+                <div class="checkbox_customizado"></div>
+                <label for="item-cacau-em-po">Cacau em pó</label>
+                <span class="icons">
+                    <i class="edit-icon"><img src="imagens/Edição.svg" alt="Caneta para edição"></i>
+                    <i class="delete-icon"><img src="imagens/Excluir.svg" alt="Lixeira para excluir"></i>
+                </span>
+            </li>
+            <li class="completed">
+                <input type="checkbox" id="item-aveia-em-flocos" class="input_checkbox" checked>
+                <div class="checkbox_customizado"></div>
+                <label for="item-aveia-em-flocos">Aveia em flocos</label>
+                <span class="icons">
+                    <i class="edit-icon"><img src="imagens/Edição.svg" alt="Caneta para edição"></i>
+                    <i class="delete-icon"><img src="imagens/Excluir.svg" alt="Lixeira para excluir"></i>
+                </span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+

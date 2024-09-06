@@ -1,0 +1,189 @@
+@import url(footer.css);
+
+/* Estilos gerais para o documento */
+:root {
+    --azul-degrade: linear-gradient(to bottom, #000000, #131730, #232e74);
+    --rosa: #FF6F61;
+    --marinho: #003366;
+    --cinza-claro: #ccc;
+}
+
+/* Garantir que html e body cubram toda a altura da página e permitam rolagem */
+html, body {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background: var(--azul-degrade);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Estilo para o contêiner principal */
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Estilo para a seção do banner */
+.banner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a imagem do banner */
+.banner-img {
+    max-width: 100%;
+}
+
+/* Estilo para a área de input */
+.input-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+/* Estilo para o campo de texto */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o botão de salvar item */
+.save-button {
+    padding: 10px 20px;
+    background-color: var(--rosa);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Estilo para o botão ao passar o mouse */
+.save-button:hover {
+    background-color: #FF4C41;
+}
+
+/* Estilo para os títulos das seções */
+.section-title {
+    font-size: 20px;
+    color: var(--rosa);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilo para a linha pontilhada abaixo dos títulos */
+.section-title:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: var(--rosa);
+    border-bottom: 2px dashed var(--rosa);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+/* Estilo para as listas de itens */
+.item-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para os itens da lista */
+.item-list li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    position: relative;
+}
+
+/* Estilo para itens marcados como comprados */
+.item-list .completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Estilo para os labels dos itens */
+.item-list label {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+/* Estilo para os ícones */
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilo para os ícones de edição e exclusão */
+.icons .edit-icon img,
+.icons .delete-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Estilo para o checkbox personalizado */
+.input_checkbox {
+    display: none;
+}
+
+/* Estilo para o checkbox customizado */
+.checkbox_customizado {
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--marinho);
+    border-radius: 4px;
+    background-color: var(--cinza-claro);
+    cursor: pointer;
+    position: relative;
+}
+
+/* Estilo para o checkbox customizado quando marcado */
+.input_checkbox:checked + .checkbox_customizado {
+    background-color: var(--marinho);
+}
+
+/* Adiciona o "checkmark" quando o checkbox é marcado */
+.input_checkbox:checked + .checkbox_customizado::after {
+    content: "";
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    height: 14px;
+    width: 5px;
+    transform: rotate(220deg);
+}
